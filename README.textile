@@ -4,15 +4,17 @@ Note: Makes use of a title helper which you can find here: "http://railscasts.co
 
 h1. Installation
 
-First you will need to install the haml-rails gem
+First you will need to install the haml-rails and simple_form gems
 
 <pre>
   gem install haml-rails
+  gem install simple_form
+  
 </pre>
 
-Be sure to include it in your Gemfile before proceeding
+Be sure to include them in your Gemfile as well before proceeding
 
-THen cd into your Rails application and run this
+Then cd into your Rails application and run this
 
 <pre>
   cd lib
