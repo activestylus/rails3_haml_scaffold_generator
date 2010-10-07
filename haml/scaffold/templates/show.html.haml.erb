@@ -1,0 +1,15 @@
+= title @<%= singular_name %>.
+- if params[:delete]
+  #confirm_delete
+    %h2= t('confirm_delete')
+    = form_for [:admin, @<%= singular_name %>], :html => { :method => :delete } do |form|
+      .act
+        = f.submit t('delete'), :id => 'delete'
+        = link_to t('cancel'), :back, :class => 'back'
+%dl.summary
+<% for attribute in attributes
+-%>  %dt= t('<%= attribute.name %>')
+  %dd= @<%= singular_name %>.<%= attribute.name %>
+<% end -%>
+=# link_to t('edit'), edit_resource_path(@<%= singular_name %>)
+=# link_to t('back'), collection_path

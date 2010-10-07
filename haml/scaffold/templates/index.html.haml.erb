@@ -1,0 +1,24 @@
+= title t('<%= plural_name %>')
+=# link_to "#{t('new')} #{t('<%= singular_name %>')}", new_resource_path, :class => "new big action"
+- if @<%= plural_name %>.any?
+  %table
+    %tr
+<% attributes.each_with_index do |attribute, index| -%><%- if index == 0 
+-%>      %th.first= t('<%= attribute.name %>')
+<%- else         
+-%>      %th= t('<%= attribute.name %>')
+<%- end -%><%- end -%>
+    %th.last= t('actions')
+  - @<%= plural_name %>.each do |<%= singular_name %>|
+    %tr
+<%- for attribute in attributes          
+-%>      %td= <%= singular_name %>.<%= attribute.name %>
+<%- end -%>
+      %td.actions
+        = link_to t('show'),   resource_path(<%= singular_name %>)
+        = link_to t('edit'),   edit_resource_path(<%= singular_name %>)
+        = link_to "✖", resource_path(<%= singular_name %>, :delete => true), :class => "delete"
+- else
+  .none
+    = t('none_yet', :models => t('<%= plural_name %>'))
+    = link_to t('create_one_now'), new_resource_path

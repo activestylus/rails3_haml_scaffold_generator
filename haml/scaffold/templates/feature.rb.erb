@@ -1,0 +1,45 @@
+Feature: Managing <%= plural_name.titleize %>
+  In order to 
+  An admin
+  Wants to manage <%= plural_name %>
+  
+  # Background:
+  #   Given an administrator: "matt" exists
+  #   And I log in as matt
+  #
+  # Scenario: Viewing all <%= plural_name %>
+  #   And a <%= singular_name %> exists
+  #   When I am on the admin <%= singular_name %>'s page
+  #   Then I should see
+  # 
+  # Scenario: Viewing a <%= singular_name %>
+  #   And a <%= singular_name %> exists
+  #   When I am on the admin <%= singular_name %>'s page
+  #   Then I should see "Hello"
+  # 
+  # Scenario: Creating a <%= singular_name %>
+  #   And I am on the create admin <%= singular_name %> page
+  #   When I fill in "<%= singular_name %>_attribute" with ""
+  #   And I press "<%= singular_name %>_submit"
+  #   Then a <%= singular_name %> should exist
+  #   And I should be on the admin <%= singular_name %>'s page
+  # 
+  # Scenario: Editing a <%= singular_name %>
+  #   And a <%= singular_name %> exists with title: "Hello", text: "lorem ipsum"
+  #   And I am on the admin <%= singular_name %>'s edit page
+  #   When I fill in "<%= singular_name %>_attribute" with ""
+  #   And I press "<%= singular_name %>_submit"
+  #   Then I should be on the admin <%= singular_name %>'s page
+  #   And I should see ""
+  # 
+  # Scenario: Deleting a <%= singular_name %>
+  #   And a <%= singular_name %> exists
+  #   And I am on the admin <%= singular_name %>'s delete page
+  #   When I press "delete"
+  #   Then I should be on the admin <%= plural_name %> page
+  #   And I should not see ""
+  # 
+  # Scenario: Viewing a <%= singular_name %> on the home page
+  #   Given a <%= singular_name %> exists
+  #   When I am on the home page
+  #   Then I should see ""

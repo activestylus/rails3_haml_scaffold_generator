@@ -1,0 +1,8 @@
+= simple_form_for [:admin, @<%= singular_name %>] do |form|
+  %fieldset
+<% for attribute in attributes -%>
+    = form.input :<%= attribute.name %>
+<% end -%>
+  .actions
+    .save= submit_tag t('save')
+    .cancel= link_to t(:cancel), :back
