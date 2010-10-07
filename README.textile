@@ -1,7 +1,5 @@
 Quick and dirty scaffolds for haml and simple_form in Rails 3.
 
-Note: Makes use of a title helper which you can find here: "http://railscasts.com/episodes/30-pretty-page-title":http://railscasts.com/episodes/30-pretty-page-title
-
 h1. Installation
 
 First you will need to install the haml-rails and simple_form gems
@@ -20,5 +18,7 @@ Then cd into your Rails application and run this
   cd lib
   git clone git@github.com:activestylus/rails3_haml_scaffold_generator.git
 </pre>
+
+Note: The templates also makes use of a title helper which you can find here: "http://railscasts.com/episodes/30-pretty-page-title":http://railscasts.com/episodes/30-pretty-page-title
 
 You can now run rails scaffold generator command and get your views spit out in haml and using simple_form, all without having to touch your app config.
