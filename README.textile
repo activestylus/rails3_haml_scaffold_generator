@@ -19,4 +19,4 @@ THen cd into your Rails application and run this
   git clone git@github.com:activestylus/rails3_haml_scaffold_generator.git
 </pre>
 
-You can now run rails scaffold generator command and get your views spit out in haml, all without having to touch your app config.
+You can now run rails scaffold generator command and get your views spit out in haml and using simple_form, all without having to touch your app config.
