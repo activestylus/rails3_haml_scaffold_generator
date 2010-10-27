@@ -15,8 +15,8 @@
 -%>      %td= <%= singular_name %>.<%= attribute.name %>
 <%- end -%>
       %td.actions
-        = link_to t('show'),   resource_path(<%= singular_name %>)
-        = link_to t('edit'),   edit_resource_path(<%= singular_name %>)
+        = link_to t('show'), resource_path(<%= singular_name %>)
+        = link_to t('edit'), edit_resource_path(<%= singular_name %>)
         = link_to "✖", resource_path(<%= singular_name %>, :delete => true), :class => "delete"
 - else
   .none
